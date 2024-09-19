@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev" class="nav-button">❮</button>
+            <div id="month" class="month-year"></div>
+            <button id="next" class="nav-button">❯</button>
+        </div>
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body"></tbody>
+        </table>
+        <div class="add-task hide ">
+
+            <p class="close-icon">❌</p>
+
+            <div class="task-details">
+                <span class="add_event">Add event</span>
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" class="task-name-input" placeholder="Enter task name">
+            
+                <label for="task-date-time">Date and Time:</label>
+                <input type="time" id="task-date-time" class="task-date-time-input">
+            
+                <label for="task-content">Task Content:</label>
+                <textarea id="task-content" class="task-content-textarea" placeholder="Enter task details"></textarea>
+            
+                <button id="save-btn">Save</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="task-list">
+        <ol class="task-items"></ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

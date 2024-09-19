@@ -1,0 +1,241 @@
+
+
+.calendar-container {
+    width: 50%;
+    height: 75vh;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 10vh;
+    left: 5vh;
+    z-index: 1;
+}
+
+.task-list{
+    width: 30%;
+    height: 90vh;
+    margin: 1% 5% 0;
+    position: absolute;
+    right:15vh ;
+    top: 0;
+    background-color:rgb(240, 227, 227) ;
+
+    color: blue;
+    overflow-y: scroll;
+
+}
+.date-head{
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.add-task {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    height: 60%;
+    width: 35%;
+    z-index: 2;
+    background-color: lightgrey;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.close-icon {
+    position: absolute;
+    right: 0.5vh;
+    font-size: 1.0em;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.task-details {
+    background-color: #f9f9f9;
+    /* Light background for the task details */
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    width: 100%;
+    /* Maximum width of the container */
+    position: relative;
+    /* For positioning the close button */
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: column;
+    /* Arrange children vertically */
+    height: 100%;
+}
+
+.add_event {
+    font-size: 1.2em;
+    /* Larger font size */
+    font-weight: bold;
+    /* Bold text */
+    color: #007bff;
+    /* Primary color for the link */
+    cursor: pointer;
+    /* Pointer cursor for clickable */
+    margin-bottom: 10px;
+    /* Space below the element */
+}
+
+label {
+    font-size: 1em;
+    /* Font size for labels */
+    color: #333;
+    /* Dark color for readability */
+    margin-top: 10px;
+    /* Space above the label */
+}
+
+.task-name-input,
+.task-date-time-input,
+.task-content-textarea {
+    width: 100%;
+    /* Full width input fields */
+    padding: 10px;
+    /* Padding inside the input fields */
+    border: 1px solid #ccc;
+    /* Border color */
+    border-radius: 4px;
+    /* Rounded corners */
+    margin-top: 5px;
+    /* Space above input fields */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+}
+
+.task-name-input {
+    font-size: 1em;
+    /* Font size for task name input */
+}
+
+.task-date-time-input {
+    font-size: 0.9em;
+    /* Font size for date and time input */
+}
+
+.task-content-textarea {
+    height: 10vh;
+    /* Set height for the textarea */
+    font-size: 0.9em;
+    /* Font size for textarea */
+    resize: vertical;
+    /* Allow vertical resizing only */
+}
+
+#save-btn {
+    width: 30%;
+    position: absolute;
+    right: 2vh;
+    bottom: 2vh;
+    background-color: #28a745;
+    /* Green background for the save button */
+    color: white;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    font-size: 1em;
+    /* Font size of the button text */
+    cursor: pointer;
+    /* Pointer cursor for clickable button */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+#save-btn:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+#save-btn:focus {
+    outline: none;
+    /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+    /* Custom focus outline */
+}
+
+
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.month-year {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-button {
+    background-color: rgb(12, 187, 241);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+thead th {
+    background-color: gray;
+    color: white;
+    padding: 10px 0;
+}
+
+td {
+
+    font-size: 1.5em;
+    height: 40px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 3% 5% 3%;
+}
+
+td:hover {
+    background-color: slateblue;
+}
+
+.today {
+    background-color: #007bff;
+    color: white;
+    border-radius: 100%;
+
+}

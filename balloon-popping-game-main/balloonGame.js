@@ -32,7 +32,7 @@ export class BalloonGame {
 
     // Attaches the event listeners for popping balloons
     attachEventListeners() {
-        document.addEventListener('click', (e) => {
+        document.addEventListener('mouseover', (e) => {
             if (e.target.classList.contains('balloon')) {
                 this.popBalloon(e.target);
             }

@@ -12,11 +12,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
 }
 
 canvas {
   border: 2px solid steelblue;
+  height: 80vh;
 }
 
 .toolbox {
@@ -52,7 +52,7 @@ header{
   width: 100%;
   color: white;
   text-align: center;
-  margin-bottom:3% ;
+ margin-top: 5%;
 }
 
 .project-title{
